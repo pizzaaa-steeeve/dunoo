@@ -7,23 +7,20 @@
     <title>Pizza Steve</title>
     <link rel="stylesheet" href="cp.css">
     <style>
-        #int {
-            resize: none;
-        }
-        table{
-            border-collapse: collapse;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <p>𐌐𐌉ⱿⱿ𐌀 𐌔𐌕𐌄ᕓ𐌄</p>
+        <nav class="nav">
+            <span>𐌐𐌉ⱿⱿ𐌀 𐌔𐌕𐌄ᕓ𐌄</span>
+            <div class="links">        
             <a href="checkpoint.html">Home</a>
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
     
@@ -59,7 +56,7 @@
         </section>
         <section id="resume">
             <h4>Why u should pick me ?</h4>
-            <ul>
+            <ul class="list">
                 <li>I have experience developping websites</li>
                 <li>I have nice skills designing websites</li>
                 <li>I learned from Mohammed Dhiya Eddine the best leader ever!</li>
@@ -74,8 +71,9 @@
                 Fullname: <input type="text" placeholder="Enter your Fullname"><br>
                 E-mail adress: <input type="email" placeholder="Enter your e-mail"><br>
                 Your interests: <br>
-                <textarea name="int" id="int" cols="30" rows="10" placeholder="Wt's your interests?" maxlength="255"></textarea>
+                <textarea name="int" id="int" cols="30" rows="10" placeholder="Wt's your interests?" maxlength="255"></textarea><br>
             </label>
+            <button>Submit</button>
         </form>
     </main>
     <main>
